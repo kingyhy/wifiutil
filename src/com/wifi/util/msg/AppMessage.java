@@ -24,7 +24,7 @@ public class AppMessage{
 		if (header == null) {
 			return null;
 		}
-		String xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><" + MESSAGE_TAG + ">";
+		String xml = "  <?xml version=\"1.0\" encoding=\"UTF-8\"?><" + MESSAGE_TAG + ">";
 		xml += "<" + MessageHeader.MSG_ID_TAG +">" + header.getMsgId() + "</" + MessageHeader.MSG_ID_TAG + ">";
 
 		if (header.getDevMac() != null) {
